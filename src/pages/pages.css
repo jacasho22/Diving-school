@@ -1,0 +1,22 @@
+.home-container,
+.about-container,
+.contact-container,
+.cursos-container {
+  padding-top: 100px; /* Para compensar el navbar fijo */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+h1 {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #666;
+} 
