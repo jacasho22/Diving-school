@@ -1,7 +1,27 @@
 .cursos-container {
   padding-top: 80px;
+  scroll-behavior: smooth;
+  scroll-margin-top: 0;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
 }
 
+.curso-card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  animation: slideIn 0.5s ease-in-out forwards;
+}
+
+.curso-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.curso-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
 .cursos-hero {
   height: 45vh;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
@@ -9,6 +29,8 @@
   background-size: cover;
   background-position: center;
   position: relative;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
 }
 
 .hero-overlay {
@@ -452,4 +474,4 @@
     gap: 1rem;
     text-align: center;
   }
-} 
+}

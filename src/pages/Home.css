@@ -1,8 +1,21 @@
 .home {
   margin-top: 80px; /* Para compensar el navbar fijo */
+  margin-top: 0;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
 }
 
-/* Hero Section */
+.hero {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideIn 0.5s ease-in-out forwards;
+}
+
+.features {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideIn 0.5s ease-in-out 0.3s forwards;
+}
 .hero {
   height: 90vh;
   background-size: cover;
@@ -179,3 +192,22 @@
     grid-template-columns: 1fr;
   }
 } 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

@@ -20,21 +20,13 @@ const About = () => {
       </section>
 
       <section className="gallery">
-        <h2>Galería de Cursos</h2>
-        <Slider {...settings}>
-          <div>
-            <img src="https://picsum.photos/600/300?random=1" alt="Curso 1" />
-          </div>
-          <div>
-            <img src="https://picsum.photos/600/300?random=2" alt="Curso 2" />
-          </div>
-          <div>
-            <img src="https://picsum.photos/600/300?random=3" alt="Curso 3" />
-          </div>
-          <div>
-            <img src="https://picsum.photos/600/300?random=4" alt="Curso 4" />
-          </div>
-        </Slider>
+        <h2>Nuestra Galería</h2>
+        <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800" alt="Buceador explorando un arrecife de coral" />
+        <img src="https://images.unsplash.com/photo-1682687220198-88e9bdea9931?w=800" alt="Grupo de estudiantes practicando en la piscina" />
+        <img src="https://images.unsplash.com/photo-1682687220067-dced9a881b56?w=800" alt="Instructor demostrando técnicas de buceo" />
+        <img src="https://images.unsplash.com/photo-1682687220923-c58b9a4592ae?w=800" alt="Equipo de buceo profesional" />
+        <img src="https://images.unsplash.com/photo-1682687220063-4742bd7fd538?w=800" alt="Buceadores en aguas cristalinas" />
+        <img src="https://images.unsplash.com/photo-1682687220777-2c60708d6889?w=800" alt="Vida marina y corales" />
       </section>
 
       <section className="about-history">
@@ -51,14 +43,14 @@ const About = () => {
       <section className="about-team">
         <h2>Conoce a Nuestro Equipo</h2>
         <div className="team-members">
-          <div className="team-member">
+        <div className="team-member">
             <img src="https://via.placeholder.com/150" alt="Instructor 1" />
-            <h3>Juan Pérez</h3>
-            <p>Instructor Principal</p>
-            <p>Con más de 15 años de experiencia, Juan es un apasionado del buceo y la enseñanza.</p>
+            <h3>María López</h3>
+            <p>Instructora de Buceo Avanzado</p>
+            <p>María se especializa en cursos avanzados y rescate, asegurando la seguridad de todos.</p>
             <div className="social-links">
-              <button onClick={() => alert('Enlace no disponible')} aria-label="Facebook Juan Pérez"><FaFacebook /></button>
-              <button onClick={() => alert('Enlace no disponible')} aria-label="Instagram Juan Pérez"><FaInstagram /></button>
+              <a href="#" aria-label="Facebook María López"><FaFacebook /></a>
+              <a href="#" aria-label="Instagram María López"><FaInstagram /></a>
             </div>
           </div>
           <div className="team-member">
@@ -113,4 +105,4 @@ const About = () => {
   );
 };
 
-export default About; 
+export default About;

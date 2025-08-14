@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Cursos.css';
+import GoogleCalendar from '../components/GoogleCalendar';
 
 const testimonios = [
   {
@@ -263,6 +264,8 @@ const Cursos = () => {
         </div>
       </section>
 
+      <GoogleCalendar />
+
       <section className="cursos-cta">
         <div className="cta-content">
           <h2>¿No estás seguro qué curso elegir?</h2>
@@ -274,4 +277,4 @@ const Cursos = () => {
   );
 };
 
-export default Cursos; 
+export default Cursos;

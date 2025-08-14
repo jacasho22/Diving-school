@@ -1,8 +1,5 @@
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import './pages/pages.css';
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -10,9 +7,20 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Cursos from './pages/Cursos';
 
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
 function App() {
   return (
-    <Router>
+    <>
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -21,7 +29,7 @@ function App() {
         <Route path="/cursos" element={<Cursos />} />
       </Routes>
       <Footer />
-    </Router>
+    </>
   );
 }
 
