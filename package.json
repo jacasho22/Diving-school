@@ -1,11 +1,13 @@
 {
-  "name": "mi-proyecto",
+  "name": "diving-school",
   "version": "1.0.0",
-  "homepage": ".",
+  "homepage": "https://jacasho22.github.io/Diving-school",
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js"
+    "test": "node scripts/test.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@babel/core": "^7.16.0",
@@ -132,5 +134,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
